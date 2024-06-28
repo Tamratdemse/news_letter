@@ -42,7 +42,7 @@ app.post('/', function(req, res) {
     const request = https.request(url, options, function(response) {
         response.on('data', function(data) {
             if (response.statusCode === 200) {
-                res.sendFile(__dirname + '/success.html'); // Fixed typo from 'seccuss.html'
+                res.sendFile(__dirname + '/seccuss.html'); // Fixed typo from 'seccuss.html'
             } else {
                 res.sendFile(__dirname + '/failure.html');
             }
